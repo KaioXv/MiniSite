@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
 
         *{
@@ -73,6 +74,25 @@
             
         }
 
+        .btn-whatsapp{
+    position: fixed;
+    outline: none;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+    background: #25d366;
+    color: #FFF;
+    font-size: 2.2rem;
+    border: 1px solid #f1f1f1;
+
+}
+a{
+    color: inherit;
+}
+
 
         h2{
             background-color: #4c3282;
@@ -107,10 +127,18 @@
     <h2>Carrinho</h2>
 
     <div id="carrinho">
+
+
+        
+       </div>
        
 
-
-    </div>
+       <button class="btn-whatsapp" title="Entre em contato através do whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=15551234567&text=Hello%2C%20World" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        
+    </button>
 
     <script>
         const items = [
